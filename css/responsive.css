@@ -340,7 +340,11 @@
         text-align: center;
     }
     .welcome-text h1 {
-        font-size: 20px;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    .welcome-text p {
+        font-size: 18px;
         letter-spacing: 1px;
     }
     .home-button {
