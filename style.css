@@ -218,6 +218,10 @@ a {
     margin: 0;
 }
 
+.margin-top-small {
+    margin-top: 100px;
+}
+
 .no-padding {
     padding: 0;
 }
@@ -338,6 +342,10 @@ input:-webkit-autofill:focus {
 
 .dark-bg .area-title h2 {
     color: #ffffff;
+}
+
+.medium-font-size {
+    font-size: 22px;
 }
 
 /*--------------------------
@@ -1203,7 +1211,7 @@ ul#nav li ul a,
 }
 
 .promo-botton-area-bg {
-    background: rgba(0, 0, 0, 0) url("img/promo/promo_bottom_bg.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("img/slider/slide_3.jpg") no-repeat scroll center center / cover;
     height: 100%;
     left: 0;
     position: absolute;
