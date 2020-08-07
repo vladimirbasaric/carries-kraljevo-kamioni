@@ -1211,7 +1211,7 @@ ul#nav li ul a,
 }
 
 .promo-botton-area-bg {
-    background: rgba(0, 0, 0, 0) url("img/slider/slide_3.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("img/slider/slide_3.jpg") repeat scroll center center / cover;
     height: 100%;
     left: 0;
     position: absolute;
