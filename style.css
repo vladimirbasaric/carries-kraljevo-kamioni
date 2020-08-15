@@ -1658,9 +1658,11 @@ ul#nav li ul a,
 
 .single-service-two {
     padding: 30px 20px 30px 100px;
+    margin-bottom: 20px;
     position: relative;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    min-height: 160px;
 }
 
 .service-icon-two {
