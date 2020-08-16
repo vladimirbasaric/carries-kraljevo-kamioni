@@ -40,6 +40,10 @@ Version: 1.0
 ----------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700');
+.color-1 {
+    color: #1a1a1a;
+}
+
 .alignleft {
     float: left;
     margin-right: 15px;

@@ -265,7 +265,7 @@
         margin-bottom: 50px;
     }
     .contact-image {
-        text-align: center;
+        text-align: left;
     }
     .service-menu {
         margin-top: 50px;
@@ -451,7 +451,7 @@
     }
     .single-service-two {
         border: 1px solid #ddd;
-        margin-bottom: -1px;
+        margin-bottom: 10px;
     }
     .subscribe-content h2 {
         font-size: 26px;
@@ -479,7 +479,7 @@
         margin-bottom: 50px;
     }
     .contact-image {
-        text-align: center;
+        text-align: left;
     }
     .comments-area ul li:nth-child(2n) {
         margin-left: 30px;
