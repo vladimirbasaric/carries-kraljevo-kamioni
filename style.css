@@ -261,6 +261,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    box-shadow: 0 0 0px 1000px white inset !important;
 }
 
 .area-title {
@@ -2271,7 +2272,7 @@ blockquote::before {
     margin-bottom: 40px;
 }
 
-.error-content h3 {}
+/* .error-content h3 {} */
 
 .error-content h2,
 .error-content h3 {
