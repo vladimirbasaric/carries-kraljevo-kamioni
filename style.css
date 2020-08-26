@@ -769,19 +769,19 @@ ul#nav li ul a,
     animation: 1s ease 1s normal both 1 running fadeInUp;
 }
 
-/* .slider-bg-one {
+.slider-bg-one {
     background: url(img/slider/slide_1.jpg) no-repeat scroll center center / cover;
-} */
+}
 
 .slider-bg-two {
     background: url(img/slider/slide_2.jpg) no-repeat scroll center center / cover;
 }
 
-/* .slider-bg-three {
+.slider-bg-three {
     background: url(img/slider/slide_3.jpg) no-repeat scroll center center / cover;
-} */
+}
 
-/* .welcome-slider-area.owl-carousel .owl-nav > div {
+.welcome-slider-area.owl-carousel .owl-nav > div {
     background: #fff none repeat scroll 0 0;
     display: inline-block;
     font-size: 30px;
@@ -798,7 +798,7 @@ ul#nav li ul a,
     bottom: 7%;
     position: absolute;
     right: 8.4%;
-} */
+}
 
 .welcome-slider-area.owl-carousel .owl-nav > div:hover {
     background: #f39c12 none repeat scroll 0 0;
