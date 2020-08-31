@@ -367,6 +367,12 @@ input:-webkit-autofill:focus {
     width: 100%;
 }
 
+.top-area-blog {
+    height: 5%;
+    position: relative;
+    width: 100%;
+}
+
 .top-area-bg {
     background: rgba(0, 0, 0, 0) url("img/slider/slide_1.jpg") no-repeat scroll center center / cover;
     height: 100%;
