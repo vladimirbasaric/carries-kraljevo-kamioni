@@ -44,6 +44,10 @@ Version: 1.0
     color: #1a1a1a;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .alignleft {
     float: left;
     margin-right: 15px;
