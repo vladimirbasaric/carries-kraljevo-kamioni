@@ -876,6 +876,25 @@ ul#nav li ul a,
     color: #fff;
 }
 
+.all-news {
+    background: #5d6b82 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+    margin-top: 15px;
+    padding: 7px 25px;
+    text-align: center;
+    width: 200px;
+    border: solid #f39c12 2px;
+}
+
+.all-news:hover,
+.all-news:focus {
+    background: #f39c12;
+    color: #fff;
+}
+
 .blog-details h3 a {
     color: #3c4a62;
 }
