@@ -1984,6 +1984,10 @@ a.scrolltotop:hover {
     padding-bottom: 50px;
 }
 
+.section-padding-2 {
+    padding: 100px 0 0 0;
+}
+
 .home-four .promo-top-area.section-padding {
     background: inherit;
     padding-bottom: 50px;
