@@ -2317,3 +2317,7 @@ blockquote::before {
 .error-area .read-more {
     width: auto;
 }
+
+#mail:hover {
+    color: #dbb460 !important;
+}
