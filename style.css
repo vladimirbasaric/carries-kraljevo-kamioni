@@ -823,7 +823,7 @@ ul#nav li ul a,
 .single-blog {
     border-radius: 5px;
     -webkit-box-shadow: 0 3px 7px #ddd;
-    box-shadow: 0 3px 7px #ddd;
+    box-shadow: 0 0 7px #ddd;
     overflow: hidden;
 }
 
