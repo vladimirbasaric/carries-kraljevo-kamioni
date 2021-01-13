@@ -377,7 +377,7 @@ input:-webkit-autofill:focus {
     width: 100%;
 }
 
-.top-area-bg {
+/* .top-area-bg {
     background: rgba(0, 0, 0, 0) url("img/slider/slide_1.jpg") no-repeat scroll center center / cover;
     height: 100%;
     left: 0;
@@ -395,7 +395,7 @@ input:-webkit-autofill:focus {
     position: absolute;
     top: 0;
     width: 100%;
-}
+} */
 
 .top-area-bg-gallery {
     /* background: rgba(0, 0, 0, 0) url("img/slider/slide_1.jpg") no-repeat scroll center center / cover; */
@@ -779,19 +779,20 @@ ul#nav li ul a,
     animation: 1s ease 1s normal both 1 running fadeInUp;
 }
 
-.slider-bg-one {
+/* .slider-bg-one {
     background: url(img/slider/slide_1.jpg) no-repeat scroll center center / cover;
-}
+} */
 
 .slider-bg-two {
     background: url(img/slider/slide_2.jpg) no-repeat scroll center center / cover;
+    height: 100%;
 }
 
-.slider-bg-three {
+/* .slider-bg-three {
     background: url(img/slider/slide_3.jpg) no-repeat scroll center center / cover;
-}
+} */
 
-.welcome-slider-area.owl-carousel .owl-nav > div {
+/* .welcome-slider-area.owl-carousel .owl-nav > div {
     background: #fff none repeat scroll 0 0;
     display: inline-block;
     font-size: 30px;
@@ -802,18 +803,18 @@ ul#nav li ul a,
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     width: 40px;
-}
+} */
 
-.welcome-slider-area.owl-carousel .owl-controls {
+/* .welcome-slider-area.owl-carousel .owl-controls {
     bottom: 7%;
     position: absolute;
     right: 8.4%;
-}
+} */
 
-.welcome-slider-area.owl-carousel .owl-nav > div:hover {
+/* .welcome-slider-area.owl-carousel .owl-nav > div:hover {
     background: #f39c12 none repeat scroll 0 0;
     color: #fff;
-}
+} */
 
 /* ----------------------------
     3. BLOG AREA
