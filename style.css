@@ -2329,3 +2329,11 @@ blockquote::before {
 #mail:hover {
     color: #dbb460 !important;
 }
+
+#clanstvo-link {
+    color:white;
+}
+
+#clanstvo-link:hover {
+    color: #dbb460 !important;
+}
