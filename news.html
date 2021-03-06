@@ -113,6 +113,7 @@
                         </div>
                         <div class="blog-details" id="news-placeholder">
                             <div class="blog-meta" ><a href="#"><i class="fa fa-truck"></i></a></div>
+<script src="./js/utils.js"></script>
 <script>
 (function() {
     var news_id = location.search.split('=')[1];
@@ -126,12 +127,7 @@
           var node = document.createElement("DIV");
           node.innerHTML = newsResponse['content'];
 
-          var date = newsResponse['date'].split('T')[0];
-          console.log(date);
-
-          var dateArray = date.split('-');
-          date = dateArray[2]+"."+dateArray[1]+"."+dateArray[0]+".";
-          console.log(date);
+          var date = extractDate(newsResponse['date']);
 
           var nodeHeading = document.createElement("SPAN");
           nodeHeading.innerHTML = newsResponse['heading'];

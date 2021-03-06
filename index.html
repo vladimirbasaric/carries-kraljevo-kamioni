@@ -395,7 +395,7 @@
                     </div>
                 </div>
             </div>
-
+<script src="./js/utils.js"></script>
 <script>
     (function() {
     var xmlhttp = new XMLHttpRequest();
@@ -403,28 +403,45 @@
       if (this.readyState == 4 && this.status == 200) {
           var newsResponse = JSON.parse(this.responseText);
 
-          console.log(newsResponse[1]);
+          //console.log(newsResponse[2]);
+          var date1 = " "+extractDate(newsResponse[0]['date']);
+          var date2 = " "+extractDate(newsResponse[1]['date']);
+          var date3 = " "+extractDate(newsResponse[2]['date']);
 
-          
-          /*var node = document.createElement("DIV");
-          node.innerHTML = newsResponse['content'];
+          var span1 = document.createElement("SPAN");
+          span1.innerHTML = date1;
+          document.getElementById("date1").appendChild(span1);
 
-          var date = newsResponse['date'].split('T')[0];
-          console.log(date);
+          var span2 = document.createElement("SPAN");
+          span2.innerHTML = date2;
+          document.getElementById("date2").appendChild(span2);
 
-          var dateArray = date.split('-');
-          date = dateArray[2]+"."+dateArray[1]+"."+dateArray[0]+".";
-          console.log(date);
+          var span3 = document.createElement("SPAN");
+          span3.innerHTML = date3;
+          document.getElementById("date3").appendChild(span3);
 
-          var nodeHeading = document.createElement("SPAN");
-          nodeHeading.innerHTML = newsResponse['heading'];
+          var anchor1 = document.createElement('a');
+          anchor1.href = "news.html?news_id="+newsResponse[0]['id'];
+          var anchorText1 = document.createTextNode(newsResponse[0]['heading']);
+          anchor1.appendChild(anchorText1);
+          document.getElementById("news1").appendChild(anchor1);
 
-          var nodeDate = document.createElement("SPAN");
-          nodeDate.innerHTML = date;
+          var anchor2 = document.createElement('a');
+          anchor2.href = "news.html?news_id="+newsResponse[1]['id'];
+          var anchorText2 = document.createTextNode(newsResponse[1]['heading']);
+          anchor2.appendChild(anchorText2);
+          document.getElementById("news2").appendChild(anchor2);
 
-          document.getElementById("news-placeholder").appendChild(node);
-          document.getElementById("news_date").appendChild(nodeDate);
-          document.getElementById("news_heading").appendChild(nodeHeading);*/
+          var anchor3 = document.createElement('a');
+          anchor3.href = "news.html?news_id="+newsResponse[2]['id'];
+          var anchorText3 = document.createTextNode(newsResponse[2]['heading']);
+          anchor3.appendChild(anchorText3);
+          document.getElementById("news3").appendChild(anchor3);
+
+          document.getElementById("detaljnije1").href = "news.html?news_id="+newsResponse[0]['id'];
+          document.getElementById("detaljnije2").href = "news.html?news_id="+newsResponse[1]['id'];
+          document.getElementById("detaljnije3").href = "news.html?news_id="+newsResponse[2]['id'];
+
       }
     };
     xmlhttp.open("GET", "http://localhost:5000/all_main_news", true);
@@ -444,8 +461,8 @@
                                 <!--<a href="news1.html">Srećni Novogodišnji i Božićni praznici</a>-->
                             </h3>
                             <p style="position: absolute; top: 120px;">Neka Vam 2021. donese mnogo radosti i uspeha, zdravlja i blagostanja! Srecna Vam Nova Godina i Božić! Vaš MDT Sistem</p>
-                            <div style="position: relative; top: 125px;" class="post-date"><i class="fa fa-calendar"></i> 1 Januar, 2021</div>
-                            <a href="news1.html" class="read-more" style="position: relative; top: 125px;">Detaljnije</a>
+                            <div id="date1" style="position: relative; top: 125px;" class="post-date"><i class="fa fa-calendar"></i></div>
+                            <a id="detaljnije1" href="" class="read-more" style="position: relative; top: 125px;">Detaljnije</a>
                         </div>
                     </div>
                 </div>
@@ -456,11 +473,11 @@
                         </div>
                         <div class="blog-details text-center" style="position: relative;">
                             <div class="blog-meta"><a href="#"><i class="fa fa-truck"></i></a></div>
-                            <h3 id="news2"><a href="news2.html">MGSI: UTVRĐEN I OBJAVLJEN GODIŠNJI PLAN RASPODELE DOZVOLA ZA 2021</a></h3>
+                            <h3 id="news2"></h3>
                             <p style="position: absolute; top: 120px;"><b>Ministarstvo</b>
                             građevinarstva, saobraćaja i infrastrukture utvrdilo je i objavilo Godišnji plan raspodele dozvole za..</p>
-                            <div style="position: relative; top: 100px;" class="post-date"><i class="fa fa-calendar"></i> 25 Decembar, 2020</div>
-                            <a href="news2.html" class="read-more" style="position: relative; top: 100px;">Detaljnije</a>
+                            <div id="date2" style="position: relative; top: 100px;" class="post-date"><i class="fa fa-calendar"></i></div>
+                            <a id="detaljnije2" href="" class="read-more" style="position: relative; top: 100px;">Detaljnije</a>
                         </div>
                     </div>
                 </div>
@@ -471,14 +488,14 @@
                         </div>
                         <div class="blog-details text-center" style="position: relative;">
                             <div class="blog-meta"><a href="#"><i class="fa fa-truck"></i></a></div>
-                            <h3 d="news3"><a href="news3.html">ADR: PRODUŽENA VAŽNOSTI ADR SERTIFIKATA ZA VOZAČE I SAVETNIKE DO 28.02.2021.</a></h3>
+                            <h3 id="news3"></h3>
                                 <p style="position: absolute; top: 120px;">
                                     <a href="https://www.trigoning.rs/?page=novosti" style="color: #f8c045;">TRIGON INŽENJERING d.o.o.</a> 
                                     iz Beograda, centar ovlašćen za stručnu obuku kandidata 
                                     za obavljanje poslova vozača..
                                 </p>
-                            <div style="position: relative; top: 100px;" class="post-date"><i class="fa fa-calendar"></i> 23 Decembar, 2020</div>
-                            <a href="news3.html" class="read-more" style="position: relative; top: 100px;">Detaljnije</a>
+                            <div id="date3" style="position: relative; top: 100px;" class="post-date"><i class="fa fa-calendar"></i></div>
+                            <a id="detaljnije3" href="" class="read-more" style="position: relative; top: 100px;">Detaljnije</a>
                         </div>
                     </div>
                 </div>
