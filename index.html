@@ -430,13 +430,21 @@
           anchor2.href = "news.html?news_id="+newsResponse[1]['id'];
           var anchorText2 = document.createTextNode(newsResponse[1]['heading']);
           anchor2.appendChild(anchorText2);
-          document.getElementById("news2").appendChild(anchor2);
+          document.getElementById("news2").appendChild(anchor2);    
 
           var anchor3 = document.createElement('a');
           anchor3.href = "news.html?news_id="+newsResponse[2]['id'];
           var anchorText3 = document.createTextNode(newsResponse[2]['heading']);
           anchor3.appendChild(anchorText3);
           document.getElementById("news3").appendChild(anchor3);
+
+          var news_head1 = extractHeadNews(newsResponse[0]['content']);
+          var news_head2 = extractHeadNews(newsResponse[1]['content']);
+          var news_head3 = extractHeadNews(newsResponse[2]['content']);
+
+          document.getElementById("news_head1").innerHTML = news_head1;
+          document.getElementById("news_head2").innerHTML = news_head2;
+          document.getElementById("news_head3").innerHTML = news_head3;
 
           document.getElementById("detaljnije1").href = "news.html?news_id="+newsResponse[0]['id'];
           document.getElementById("detaljnije2").href = "news.html?news_id="+newsResponse[1]['id'];
@@ -460,7 +468,7 @@
                             <h3 id="news1">
                                 <!--<a href="news1.html">Srećni Novogodišnji i Božićni praznici</a>-->
                             </h3>
-                            <p style="position: absolute; top: 120px;">Neka Vam 2021. donese mnogo radosti i uspeha, zdravlja i blagostanja! Srecna Vam Nova Godina i Božić! Vaš MDT Sistem</p>
+                            <p id="news_head1" style="position: absolute; top: 120px;"></p>
                             <div id="date1" style="position: relative; top: 125px;" class="post-date"><i class="fa fa-calendar"></i></div>
                             <a id="detaljnije1" href="" class="read-more" style="position: relative; top: 125px;">Detaljnije</a>
                         </div>
@@ -474,8 +482,7 @@
                         <div class="blog-details text-center" style="position: relative;">
                             <div class="blog-meta"><a href="#"><i class="fa fa-truck"></i></a></div>
                             <h3 id="news2"></h3>
-                            <p style="position: absolute; top: 120px;"><b>Ministarstvo</b>
-                            građevinarstva, saobraćaja i infrastrukture utvrdilo je i objavilo Godišnji plan raspodele dozvole za..</p>
+                            <p id="news_head2" style="position: absolute; top: 120px;"></p>
                             <div id="date2" style="position: relative; top: 100px;" class="post-date"><i class="fa fa-calendar"></i></div>
                             <a id="detaljnije2" href="" class="read-more" style="position: relative; top: 100px;">Detaljnije</a>
                         </div>
@@ -489,10 +496,7 @@
                         <div class="blog-details text-center" style="position: relative;">
                             <div class="blog-meta"><a href="#"><i class="fa fa-truck"></i></a></div>
                             <h3 id="news3"></h3>
-                                <p style="position: absolute; top: 120px;">
-                                    <a href="https://www.trigoning.rs/?page=novosti" style="color: #f8c045;">TRIGON INŽENJERING d.o.o.</a> 
-                                    iz Beograda, centar ovlašćen za stručnu obuku kandidata 
-                                    za obavljanje poslova vozača..
+                                <p id="news_head3" style="position: absolute; top: 120px;">
                                 </p>
                             <div id="date3" style="position: relative; top: 100px;" class="post-date"><i class="fa fa-calendar"></i></div>
                             <a id="detaljnije3" href="" class="read-more" style="position: relative; top: 100px;">Detaljnije</a>
